@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Seay Wellness – Patient Appreciation Packet</title>
+<title>Seay Wellness · Patient Appreciation Packet</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -151,7 +151,7 @@
     background: #f7f9fc; border-left: 4px solid var(--navy);
     padding: 13px 14px; margin-bottom: 11px;
   }
-  .discover-block.db-glp { border-left-color: #a8b820; }
+  .discover-block.db-rcu { border-left-color: #a8b820; }
   .discover-block.db-fam { border-left-color: var(--lblue); }
   .db-ey {
     font-size: 8.5px; letter-spacing: 2px; text-transform: uppercase;
@@ -162,9 +162,13 @@
     font-size: 13.5px; color: var(--dark); font-weight: 600; margin-bottom: 5px;
   }
   .db-desc { font-size: 10.5px; color: #1a2540; line-height: 1.7; font-weight: 500; }
+  .svc-strip {
+    border: 1px solid #e0e6ed; padding: 7px 12px; margin-bottom: 0;
+  }
+  .svc-list { font-size: 10.5px; color: #1a2540; line-height: 1.6; font-weight: 600; }
   .closing-note {
-    font-size: 10.5px; color: #1a2540; line-height: 1.75; margin-top: 12px;
-    font-style: italic; border-top: 1px solid var(--rule); padding-top: 12px;
+    font-size: 10.5px; color: #1a2540; line-height: 1.75; margin-top: 10px;
+    font-style: italic; border-top: 1px solid var(--rule); padding-top: 8px;
   }
 
   /* ===== INSIDE RIGHT ===== */
@@ -196,6 +200,7 @@
   #qrcode canvas, #qrcode img {
     width: 68px !important; height: 68px !important; display: block;
   }
+  .qr-img { width: 84px; height: 84px; display: block; flex-shrink: 0; }
   .qr-note { font-size: 10px; color: #1a2540; line-height: 1.65; flex: 1; align-self: center; font-weight: 500; }
   .ref-line {
     display: flex; align-items: flex-end; gap: 6px;
@@ -210,7 +215,7 @@
   .page-inside { transform: rotate(180deg); }
 
   @media print {
-    @page { size: 11in 8.5in landscape; margin: 0; }
+    @page { size: 11in 8.5in; margin: 0; }
     body { background: none; padding: 0; gap: 0; display: block; }
     .screen-only, .fold-label { display: none !important; }
     .page { box-shadow: none; page-break-after: always; width: 11in; height: 8.5in; }
@@ -225,13 +230,13 @@
   <h2>Existing Patient Appreciation Packet</h2>
   <p>
     Print on 8.5&quot; &times; 11&quot; paper, double-sided, flip on the <strong>long edge</strong>. Fold in half vertically.<br>
-    Replace <code>YOUR_GOOGLE_PLACE_ID</code> in the script at the bottom with your actual Google Place ID.
+    Both QR codes are live: one opens the Seay Wellness Google review page, one opens the free Root Cause Unlocked quiz.
   </p>
   <button class="print-btn" onclick="window.print()">Print This Packet</button>
 </div>
 
 <!-- PAGE 1: OUTSIDE -->
-<div class="fold-label screen-only">Side 1 &mdash; Outside (Back | Front Cover)</div>
+<div class="fold-label screen-only">Side 1: Outside (Back | Front Cover)</div>
 <div class="page">
 
   <!-- BACK -->
@@ -254,6 +259,10 @@
       <div class="ci">
         <div class="ci-lbl">Book Online</div>
         <div class="ci-val">seaywellness.janeapp.com</div>
+      </div>
+      <div class="ci">
+        <div class="ci-lbl">Guides and Ebooks</div>
+        <div class="ci-val">rootcauseunlocked.com</div>
       </div>
       <div class="hours-box">
         <div class="hours-title">Book Your Next Visit</div>
@@ -289,7 +298,7 @@
 </div>
 
 <!-- PAGE 2: INSIDE -->
-<div class="fold-label screen-only">Side 2 &mdash; Inside (Discover More | Three Actions)</div>
+<div class="fold-label screen-only">Side 2: Inside (Discover More | Three Actions)</div>
 <div class="page page-inside">
 
   <!-- INSIDE LEFT -->
@@ -297,7 +306,7 @@
     <div class="eyebrow">Beyond the Adjustment</div>
     <h2>There Is More Available to You Than You May Realize</h2>
     <div class="rule"></div>
-    <p class="intro-p">Patients who have been coming in for adjustments sometimes do not realize the full scope of what is available at Seay Wellness. If any of the following sounds like something you or someone in your life could benefit from, just ask.</p>
+    <p class="intro-p">Many patients do not know everything we offer. If any of this sounds like you or someone you love, just ask.</p>
 
     <div class="discover-block">
       <div class="db-ey">6-Month Program</div>
@@ -305,19 +314,24 @@
       <p class="db-desc">A comprehensive six-month program combining chiropractic care with functional medicine. Designed for patients who want to address the root cause of chronic health challenges, not manage them visit by visit. Includes labs, nutrition guidance, and metabolic assessment.</p>
     </div>
 
-    <div class="discover-block db-glp">
-      <div class="db-ey">For GLP-1 Medication Users</div>
-      <div class="db-title">GLP-1 Cellular Restoration Program</div>
-      <p class="db-desc">A specialized recovery protocol for patients on Ozempic, Wegovy, or similar medications. Addresses muscle loss, nutrient depletion, and mitochondrial stress that often accompany rapid weight loss. More at support4glp1.com.</p>
+    <div class="discover-block db-rcu">
+      <div class="db-ey">Guides, Ebooks and Discovery Calls</div>
+      <div class="db-title">Root Cause Unlocked</div>
+      <p class="db-desc">Dr. Seay's guides and ebooks, the same material he uses with patients, to help you work through whatever part of your health you feel stuck on. Not sure where to start? Take the free symptom quiz or book a free 20-minute Discovery Session. <strong>rootcauseunlocked.com</strong></p>
     </div>
 
     <div class="discover-block db-fam">
       <div class="db-ey">Standalone Service</div>
       <div class="db-title">Functional Medicine</div>
-      <p class="db-desc">Most patients see Dr. Seay for chiropractic care and never realize he also runs comprehensive functional medicine evaluations. If you are dealing with fatigue, hormone imbalance, gut issues, chronic inflammation, or a health problem no one has been able to explain, functional medicine starts with advanced lab work to find out exactly what is happening inside your body. No guesswork. No symptom management. Ask Dr. Seay if this is right for you.</p>
+      <p class="db-desc">Most patients see Dr. Seay for chiropractic care and never realize he also runs comprehensive functional medicine evaluations. If you are dealing with fatigue, hormone imbalance, gut issues, chronic inflammation, or a health problem no one has been able to explain, it starts with advanced lab work to find out what is actually going on. Ask Dr. Seay if this is right for you.</p>
     </div>
 
-    <p class="closing-note">You do not need a referral to explore any of these. Just mention it at your next visit and Dr. Seay will walk you through whether it is the right fit.</p>
+    <div class="svc-strip">
+      <div class="db-ey">Also Here in the Office</div>
+      <div class="svc-list">Dry Needling &middot; Laser Therapy &middot; Spinal Decompression &middot; Active Release Technique &middot; Functional Movement Therapy &middot; Ionic Foot Bath &middot; Far Infrared Sauna</div>
+    </div>
+
+    <p class="closing-note">No referral needed. Just ask Dr. Seay at your next visit.</p>
   </div>
 
   <!-- INSIDE RIGHT -->
@@ -325,22 +339,22 @@
     <div class="eyebrow">Three Ways to Give Back</div>
     <h2>You Can Help Change Someone Else's Life</h2>
     <div class="rule"></div>
-    <p class="intro-p2">You have experienced the results. The people who need this care most are often the ones who have never been told it is an option. Three things you can do right now that cost nothing but make a real difference.</p>
+    <p class="intro-p2">You have experienced the results. The people who need this care most have often never been told it is an option. Three free ways to help:</p>
 
     <div class="action-block a1">
-      <div class="a-num">Action 01 &nbsp;&mdash;&nbsp; Two Minutes</div>
+      <div class="a-num">Action 01 &nbsp;&middot;&nbsp; Two Minutes</div>
       <div class="a-title">Leave a Google Review</div>
-      <p class="a-desc">If you have not left us a review yet, your words are what gets new patients through the door. People research practices before they call. Your experience is the most valuable thing you can share.</p>
+      <p class="a-desc">People read reviews before they call. If you have not left one yet, yours is what gets the next patient through the door.</p>
       <div class="qr-row">
-        <img src="data:image/png;base64,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" style="width:110px;height:110px;display:block;" alt="Google Review QR Code">
+        <img src="data:image/png;base64,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" class="qr-img" alt="Google Review QR Code">
         <p class="qr-note">Scan with your phone camera to be taken directly to our Google review page.</p>
       </div>
     </div>
 
     <div class="action-block a2">
-      <div class="a-num">Action 02 &nbsp;&mdash;&nbsp; Thirty Seconds</div>
+      <div class="a-num">Action 02 &nbsp;&middot;&nbsp; Thirty Seconds</div>
       <div class="a-title">Send Someone You Care About</div>
-      <p class="a-desc">Write down one person who is dealing with pain or health issues they cannot resolve. Hand this to us and we will reach out.</p>
+      <p class="a-desc">Know someone with pain or a health problem no one has solved? Ask them first, write them down, hand this to the front desk, and we will reach out.</p>
       <div class="ref-line">
         <div class="ref-lbl">Name</div><div class="ref-fill"></div>
       </div>
@@ -350,9 +364,13 @@
     </div>
 
     <div class="action-block a3">
-      <div class="a-num">Action 03 &nbsp;&mdash;&nbsp; One Mention</div>
-      <div class="a-title">Tell Someone About the GLP-1 Program</div>
-      <p class="a-desc">If you know someone on Ozempic or a similar medication, they likely have no idea the cellular side effects can be addressed clinically. Point them to support4glp1.com or just mention our name.</p>
+      <div class="a-num">Action 03 &nbsp;&middot;&nbsp; One Text</div>
+      <div class="a-title">Share the Free Root Cause Quiz</div>
+      <p class="a-desc">Know someone whose labs keep coming back &ldquo;normal&rdquo; but who still feels awful? Send them the free quiz. Seven taps, about a minute, no account.</p>
+      <div class="qr-row">
+        <img class="qr-img" alt="QR code for the free Root Cause Unlocked quiz" src="data:image/png;base64,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">
+        <p class="qr-note">Scan it, then text the link to a friend. Or just tell them:<br><strong>rootcauseunlocked.com/start</strong></p>
+      </div>
     </div>
   </div>
 
